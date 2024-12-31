@@ -80,15 +80,7 @@ const Navbar = (props) => {
         >
           Overview
         </li>
-        <li
-          className="list_items"
-          onClick={(e) => {
-            togglenavbar(e);
-           props.handleChangeBetweenNavItems("about");
-          }}
-        >
-          About
-        </li>
+        
       </ul>
       <div className="search">
         <input
