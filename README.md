@@ -24,22 +24,20 @@ The Dynamic Event Calendar Application is a React-based web app built using the 
 - **Deployment**: Vercel, Netlify, or other platforms
 
 ## Setup Instructions
+    ```bash
 1. Clone the repository:
    
- ```bash
    git clone https://github.com/impriyanshu29/calenderly-event-manager.git
    cd event-calendar
 
 2. For frontend :
 
- ```bash
    cd client
    npm install
    npm run start
 
 3. For backend :
 
- ```bash
    cd server
    npm install
    npm run start 
