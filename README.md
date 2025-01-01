@@ -33,17 +33,13 @@ The Dynamic Event Calendar Application is a React-based web app built using the 
    ```bash
    cd client
    npm install
+   npm run start
 
 3. ## For backend
   ```bash
    cd server
    npm install
+   npm run start 
 
-4. ## Frontend Command
-  ```bash
-    npm start
 
-5. ## Backend Command
-  ```bash
-    npm run dev
 
