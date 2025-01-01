@@ -3,7 +3,7 @@ const connectDB = require("./db");
 const cors = require("cors");
 require('dotenv').config();
 const app = express();
-const port = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 const path = require('path');
 const mailRoute = require('./routes/mail')
 
@@ -24,8 +24,8 @@ app.use("/api/chat", require("./routes/chats"));
 app.use("/api/meet", require("./routes/meets"));
 app.use("/api/sendmail", mailRoute);
 // Start the server
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`Server listening on port ${PORT}`);
 });
 
 
