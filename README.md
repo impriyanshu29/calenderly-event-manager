@@ -1,45 +1,46 @@
-# Event Manager Dashboard
+# Dynamic Event Calendar Application
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+## Overview
+The Dynamic Event Calendar Application is a React-based web app built using the MERN stack (MongoDB, Express, React, Node.js). It provides a dynamic calendar to manage events, featuring functionality such as adding, editing, deleting, and displaying events. The application persists data using **localStorage** or **MongoDB** and is deployed to **Vercel**, **Netlify**, or another platform.
 
-Event Manager Dashboard is an open-source web application for efficient event management and organization. It provides a user-friendly dashboard that allows users to create, manage, and track various events seamlessly. The dashboard offers features such as event creation, task checklists, and collaboration management. The application is built using web technologies, including HTML, CSS, JavaScript, and React.js.
-
-## Key Features
-
-- Create and manage events with essential details such as title, date, and location.
-- Track tasks and progress through a comprehensive checklist for each event.
-- Collaborate with team members by assigning roles and managing event-related responsibilities.
-- Responsive design for seamless usage across different devices and screen sizes.
+## Features
+- **Calendar View**: Displays a grid of the current month, with options to navigate between months.
+- **Event Management**: Add, edit, and delete events for each day, with details such as event name, start time, end time, and description.
+- **Event List**: View a list of events for any given day in a side panel or modal.
+- **Event Persistence**: Data is stored in **localStorage** or a MongoDB backend for persistence.
+- **Complex Logic**:
+  - Automatically handle month transitions.
+  - Prevent overlapping events.
+  - Filter events by keywords.
+- **Optional Features**:
+  - Drag-and-drop rescheduling.
+  - Color-coded events.
+  - Export events as **JSON** or **CSV** files.
 
 ## Technologies Used
+- **Frontend**: React.js, shadcn for UI components
+- **Backend**: Node.js, Express, MongoDB (via Mongoose)
+- **Data Storage**: localStorage (or MongoDB)
+- **Deployment**: Vercel, Netlify, or other platforms
 
-**Frontend:**
-- HTML
-- CSS
-- JavaScript
-- React.js (JavaScript library for building user interfaces)
-- Bootstrap (Front-end component library)
-- Redux (State management)
-- Axios (HTTP client for making API requests)
-- React Router (Library for routing within the application)
+## Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/impriyanshu29/calenderly-event-manager.git
+   cd event-calendar
+2. # For frontend
+cd client
+npm install
 
-**Backend:**
-- Node.js (JavaScript runtime environment)
-- Express.js (Web application framework for Node.js)
-- MongoDB (NoSQL database)
-- Mongoose (Object Data Modeling library for MongoDB)
-- JSON Web Tokens (Authentication and authorization)
-- Passport.js (Authentication middleware)
-- bcrypt.js (Password hashing)
+3. # For backend
+cd server
+npm install
 
-## Proposed UI Design
+Run the application locally:
 
-<img src="https://github.com/apru02/Event-Manager-Dashboard/assets/105492094/59ee8fa4-e676-4fe4-a129-b65bd2a54a66" align ="center" height ="400" width="711.10">
+4. # Frontend Command:
+npm start
 
-## License
+5. # Backend Command:
+npm run dev
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any questions or feedback, feel free to reach out to me at duttaapratim11@gmail.com .
