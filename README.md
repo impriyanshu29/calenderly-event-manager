@@ -28,19 +28,22 @@ The Dynamic Event Calendar Application is a React-based web app built using the 
    ```bash
    git clone https://github.com/impriyanshu29/calenderly-event-manager.git
    cd event-calendar
-2. # For frontend
-cd client
-npm install
+   
+2. ## For frontend
+   ```bash
+   cd client
+   npm install
 
-3. # For backend
-cd server
-npm install
+3. ## For backend
+  ```bash
+   cd server
+   npm install
 
-Run the application locally:
+4. ## Frontend Command:
+    ```bash
+    npm start
 
-4. # Frontend Command:
-npm start
-
-5. # Backend Command:
-npm run dev
+5. ## Backend Command:
+    ```bash
+    npm run dev
 
