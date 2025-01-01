@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { GoogleLogin } from "react-google-login";
+import { GoogleLogin } from '@react-oauth/google';
 import classNames from "classnames";
 import "../App.css"; // Import the CSS file
 import { Link } from "react-router-dom";

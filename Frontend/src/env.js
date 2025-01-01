@@ -1,1 +1,1 @@
-export const host = "https://eventmanagerserver.onrender.com"
+export const host = "https://calenderly-event-manager-1.onrender.com"
