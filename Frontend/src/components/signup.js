@@ -4,7 +4,6 @@ import classNames from "classnames";
 import "../App.css"; // Import the CSS file
 import { Link } from "react-router-dom";
 import mybg from "./logos/20285469_6187456.svg";
-import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 const {host} = require("../env.js");
 
