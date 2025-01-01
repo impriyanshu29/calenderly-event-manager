@@ -9,7 +9,8 @@ const mailRoute = require('./routes/mail')
 
 // Connect to MongoDB
 connectDB();
-app.use(cors());
+app.use(cors({ origin: 'https://event-manager-calenderly.netlify.app' }));
+
 
 // Middleware
 app.use(express.json());

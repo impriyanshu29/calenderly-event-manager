@@ -21,7 +21,7 @@ const SigninComponent = (props) => {
     setPassword(e.target.value);
   };
 
-  const [googleSignInSuccess, setGoogleSignInSuccess] = useState(false);
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
     // Perform login logic here, e.g., send the data to the server
@@ -53,7 +53,7 @@ const SigninComponent = (props) => {
       props.setMessage1("Invalid credentials");
       props.setType1("danger");
       props.setShowAlert1(true);
-      setGoogleSignInSuccess(false);
+      
       setTimeout(() => {
         props.setShowAlert1(false);
       }, 3000);
@@ -99,7 +99,7 @@ const SigninComponent = (props) => {
         props.setShowAlert1(false);
       }, 3000);
 
-      setGoogleSignInSuccess(false);
+   
       setUsername("");
       setEmail("");
       setPassword("");
@@ -108,44 +108,8 @@ const SigninComponent = (props) => {
     // Clear form fields after submission
   
   };
-  useEffect(() => {
-    const typedOutElement = document.getElementById("demo");
-    const illustratedimg = document.getElementById("signupillustratorimg");
-
-    typedOutElement.classList.add("fade-in");
-    illustratedimg.classList.add("fade-in");
-    const handleSubmitWithGoogle = () => {
-      if (googleSignInSuccess) {
-        submit_btn.current.click();
-        setGoogleSignInSuccess(false);
-      }
-    };
-
-    handleSubmitWithGoogle();
-    // setInterval(() => {
-    //   handleSubmitWithGoogle();
-    // }, 500);
-
-    return () => {
-      clearInterval(handleSubmitWithGoogle);
-    };
-  }, [googleSignInSuccess]);
-
-  const responseGoogleSuccess = (response) => {
-    const { profileObj } = response;
-    const { email,name } = profileObj;
-    setUsername(email.split("@")[0]);
-    setPassword("12345678");
-    setEmail(email);
-    setName(name);
-    setGoogleSignInSuccess(true);
-    console.log("Google Sign-In Successful:", response);
-  };
-
-  // Handle Google sign-in failure
-  const responseGoogleFailure = (error) => {
-    console.log("Google Sign-In Failed:", error);
-  };
+ 
+  
 
   return (
     <div className="signupgrid">
