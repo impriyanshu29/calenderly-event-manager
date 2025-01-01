@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { GoogleLogin } from '@react-oauth/google';
+
 import classNames from "classnames";
 import "../App.css"; // Import the CSS file
 import { Link } from "react-router-dom";
@@ -294,23 +294,7 @@ const SignupComponent = (props) => {
             </button>
           </form>
         </div>
-        <GoogleLogin
-        clientId="154737886462-ef9cneipqh5p0j4pe561h1ofhmt1lpps.apps.googleusercontent.com"
-        buttonText="Sign up with Google"
-        onSuccess={responseGoogleSuccess}
-        onFailure={responseGoogleFailure}
-        cookiePolicy={"single_host_origin"}
-        render={(props) => (
-          <button
-            className="google-signin-button" // Apply custom class for styling
-            onClick={props.onClick}
-            disabled={props.disabled}
-          >
-            Sign up with Google
-          </button>
-        )}
-      
-      />
+       
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { GoogleLogin } from '@react-oauth/google';
+
 import mybg from "./logos/20285469_6187456.svg";
 import "../App.css";
 const {host} = require("../env.js");
@@ -217,22 +217,7 @@ const SigninComponent = (props) => {
             </button>
           </form>
         </div>
-        <GoogleLogin
-          clientId="154737886462-ef9cneipqh5p0j4pe561h1ofhmt1lpps.apps.googleusercontent.com"
-          buttonText="Sign in with Google"
-          onSuccess={responseGoogleSuccess}
-          onFailure={responseGoogleFailure}
-          cookiePolicy={"single_host_origin"}
-          render={(props) => (
-            <button
-              className="google-signin-button" // Apply custom class for styling
-              onClick={props.onClick}
-              disabled={props.disabled}
-            >
-              Sign in with Google
-            </button>
-          )}
-        />
+        
       </div>
     </div>
   );
